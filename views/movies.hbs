@@ -1,0 +1,30 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <style>
+      body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+      h1 { color: #333; } .movie-details { margin-top: 20px; } .movie-image {
+      max-width: 300px; max-height: 450px; border-radius: 5px; box-shadow: 0 0
+      10px rgba(0, 0, 0, 0.1); } .movie-description { margin-top: 20px;
+      font-size: 16px; color: #333; } .showtimes-list { list-style: none;
+      padding: 0; margin-top: 20px; } .showtime-item { font-size: 14px;
+      margin-bottom: 5px; color: #666; }
+    </style>
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+    <div class="movie-details">
+      <img class="movie-image" src="{{movie.image}}" alt="{{movie.title}}" />
+      <p class="movie-description">{{movie.description}}</p>
+      <ul class="showtimes-list">
+        <li class="showtime-item">Showtimes:</li>
+        {{#each movie.showtimes}}
+          <li class="showtime-item">{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </body>
+</html>
