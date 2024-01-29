@@ -1,2 +1,38 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+    }
+
+    .movies-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      background-color: #4285f4;
+      color: #ffffff;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>{{title}}</h1>
+  <p>Welcome to {{title}}</p>
+  <a href="/movies" class="movies-button">Explore Movies</a>
+</body>
+</html>
